@@ -1,0 +1,59 @@
+    'auth_login': ComponentConfig(
+      name: 'auth_login',
+      templatePath: 'ui/auth/login',
+      files: [
+        ComponentFile(
+          templateName: 'card/login_card.dart.tpl',
+          fileName: 'ui/auth/login/login_page.dart',
+        ),
+      ],
+      variants: {
+        'split': ComponentVariant(
+          name: 'split',
+          files: [
+            ComponentFile(
+              templateName: 'split/login_split.dart.tpl',
+              fileName: 'ui/auth/login/login_page.dart',
+            ),
+          ],
+        ),
+        'card': ComponentVariant(
+          name: 'card',
+          files: [], // Default
+        ),
+      },
+    ),
+    'auth_signup': ComponentConfig(
+      name: 'auth_signup',
+      templatePath: 'ui/auth/signup',
+      files: [
+        ComponentFile(
+          templateName: 'card/signup_card.dart.tpl',
+          fileName: 'ui/auth/signup/signup_page.dart',
+        ),
+      ],
+      variants: {
+        'split': ComponentVariant(
+          name: 'split',
+          files: [
+            ComponentFile(
+              templateName: 'split/signup_page.dart.tpl',
+              fileName: 'ui/auth/signup/signup_page.dart',
+            ),
+          ],
+        ),
+        'card': ComponentVariant(
+          name: 'card',
+          files: [], // Default
+        ),
+        'minimal': ComponentVariant(
+          name: 'minimal',
+          files: [
+            ComponentFile(
+              templateName: 'minimal/signup_minimal.dart.tpl',
+              fileName: 'ui/auth/signup/signup_page.dart',
+            ),
+          ],
+        ),
+      },
+    ),
